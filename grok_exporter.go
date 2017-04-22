@@ -17,9 +17,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/fstab/grok_exporter/config"
-	"github.com/fstab/grok_exporter/config/v2"
-	"github.com/fstab/grok_exporter/exporter"
+	"github.com/jjo/grok_exporter/config"
+	"github.com/jjo/grok_exporter/config/v2"
+	"github.com/jjo/grok_exporter/exporter"
 	"github.com/jjo/grok_exporter/tailer"
 	"github.com/prometheus/client_golang/prometheus"
 	"net/http"

@@ -16,8 +16,8 @@ package exporter
 
 import (
 	"fmt"
-	"github.com/fstab/grok_exporter/config/v2"
-	"github.com/fstab/grok_exporter/templates"
+	"github.com/jjo/grok_exporter/config/v2"
+	"github.com/jjo/grok_exporter/templates"
 	"github.com/prometheus/client_golang/prometheus"
 	"strconv"
 )
