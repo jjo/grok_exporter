@@ -20,7 +20,7 @@ import (
 	"github.com/fstab/grok_exporter/config"
 	"github.com/fstab/grok_exporter/config/v2"
 	"github.com/fstab/grok_exporter/exporter"
-	"github.com/fstab/grok_exporter/tailer"
+	"github.com/jjo/grok_exporter/tailer"
 	"github.com/prometheus/client_golang/prometheus"
 	"net/http"
 	"os"
