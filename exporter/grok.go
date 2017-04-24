@@ -16,7 +16,7 @@ package exporter
 
 import (
 	"fmt"
-	"github.com/fstab/grok_exporter/config/v2"
+	"github.com/jjo/grok_exporter/config/v2"
 	"regexp"
 	"strings"
 )

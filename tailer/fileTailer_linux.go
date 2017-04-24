@@ -16,7 +16,6 @@ package tailer
 
 import (
 	"fmt"
-	"io"
 	"os"
 	"path/filepath"
 	"strings"
@@ -160,7 +159,7 @@ func processEvents(events []eventWithName, _ *watcher, fileBefore *os.File, read
 				return
 			}
 			if truncated {
-				_, err = file.Seek(0, io.SeekStart)
+				_, err = file.Seek(0, os.SEEK_SET)
 				if err != nil {
 					return
 				}
@@ -203,7 +202,7 @@ func processEvents(events []eventWithName, _ *watcher, fileBefore *os.File, read
 }
 
 func checkTruncated(file *os.File) (bool, error) {
-	currentPos, err := file.Seek(0, io.SeekCurrent)
+	currentPos, err := file.Seek(0, os.SEEK_CUR)
 	if err != nil {
 		return false, fmt.Errorf("%v: Seek() failed: %v", file.Name(), err.Error())
 	}
